@@ -37,7 +37,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Extensions/plugins/integrations for IDEs and code editors',
+    title: 'Extension/Plugin/Integration',
     href: 'https://github.com/ink-analyzer/ink-vscode',
     Svg: require('@site/static/img/extension.svg').default,
     description: (

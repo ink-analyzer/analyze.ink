@@ -91,7 +91,7 @@ It is written in [Rust](https://www.rust-lang.org/) and uses:
 - rust-analyzer's [lsp-server](https://docs.rs/lsp-server/latest/lsp_server/) crate to handle LSP protocol handshaking and parsing messages
 - the [lsp-types](https://docs.rs/lsp-types/latest/lsp_types/) crate for LSP type definitions.
 
-### 3. Extension/Plugin/Integration for IDE, Code Editor or Development Tool
+### 3. Extension/Plugin/Integration
 
 Extensions/plugins/integrations add ink! language support to a specific IDE, code editor or development tool by communicating with the language server running as a separate process using the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) via [JSON-RPC](https://www.jsonrpc.org/).
 
