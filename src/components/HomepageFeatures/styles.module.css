@@ -9,4 +9,9 @@
   height: 100px;
   width: 100px;
   margin: 50px 0 20px;
+  fill: currentColor;
+}
+
+[data-theme='dark'] .featureSvg {
+  opacity: 0.8;
 }
