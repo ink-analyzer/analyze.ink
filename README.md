@@ -1,4 +1,4 @@
-# Website
+# ink! Analyzer
 
 This repository contains the source code for the [ink! Analyzer](https://analyze.ink/) website.
 
