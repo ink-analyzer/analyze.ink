@@ -26,12 +26,12 @@ However, relying on only generic Rust language support in IDEs, code editors and
 ## Solution
 
 To solve the above challenges and improve ink! language support in IDEs, code editors and other development tools, ink! analyzer creates two main components:
-- [a modular domain-specific semantic analysis library for ink!](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/analyzer).
-- a [Language Server Protocol (LSP)](https://microsoft.github.io/language-server-protocol/) [implementation](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/lsp-server) built on top of the aforementioned semantic analysis library.
+- [A modular domain-specific semantic analysis library for ink!](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/analyzer).
+- A [Language Server Protocol (LSP)](https://microsoft.github.io/language-server-protocol/) [implementation](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/lsp-server) built on top of the aforementioned semantic analysis library.
 
 These two components can be reused to add ink! language support to multiple IDEs, code editors and other development tools.
 
-In particular, a large number of IDEs and code editors support LSP servers either via configurable LSP clients or [robust LSP client libraries/APIs/modules](https://www.npmjs.com/package/vscode-languageclient), including [Visual Studio Code, Visual Studio, Vim / Neovim, Emacs, Atom, Sublime Text, Acme, Lapce, Eclipse and many more](https://microsoft.github.io/language-server-protocol/implementors/tools/).
+In particular, a large number of IDEs and code editors support LSP servers either via configurable LSP clients or robust LSP client libraries/APIs/modules, including [Visual Studio Code, Visual Studio, Vim / Neovim, Emacs, Atom, Sublime Text, Acme, Lapce, Eclipse and many more](https://microsoft.github.io/language-server-protocol/implementors/tools/).
 
 This project makes it relatively easy for:
 - Users to enable ink! language support for their IDE, code editor or other development tool if it has either a native/built-in or third-party LSP client that can be configured to launch an LSP server using an executable command (i.e. the path to an [installed ink! Language Server binary](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/lsp-server#installation)) and can use stdio (standard in/standard out) as the message transport.
@@ -40,7 +40,7 @@ This project makes it relatively easy for:
 In addition to [distributing compiled ink! Language Server (`ink-lsp-server`) binaries for a few platforms](https://github.com/ink-analyzer/ink-analyzer/releases),
 ink! Analyzer additionally distributes a [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ink-analyzer.ink-analyzer) that ships with a bundled ink! Language Server as a showcase and [reference implementation](https://github.com/ink-analyzer/ink-vscode) for the latter use case.
 
-The latter option typically provides a better user experience as the user usually doesn't have to manually install (and update) the ink! Language Server as it can be bundled by the extension/plugin/integration.
+The latter option typically provides a better user experience as the user doesn't have to manually install (and update) the ink! Language Server as it can be bundled by the extension/plugin/integration.
 
 
 ## Architecture
