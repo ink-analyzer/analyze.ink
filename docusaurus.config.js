@@ -39,7 +39,7 @@ const config = {
       ({
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/ink-analyzer/analyze.ink/tree/master/blog/',
+          editUrl: 'https://github.com/ink-analyzer/analyze.ink/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/ink-analyzer.css'),
