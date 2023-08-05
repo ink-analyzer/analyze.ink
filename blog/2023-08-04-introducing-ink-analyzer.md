@@ -87,7 +87,6 @@ It uses the semantic analyzer as the engine for providing ink! language support 
 It can be reused by multiple IDEs, code editors and other development tools that support LSP servers either via native/built-in LSP clients or third-party LSP client extensions/plugins/integrations.
 
 It is written in [Rust](https://www.rust-lang.org/) and uses:
-
 - rust-analyzer's [lsp-server](https://docs.rs/lsp-server/latest/lsp_server/) crate to handle LSP protocol handshaking and parsing messages
 - the [lsp-types](https://docs.rs/lsp-types/latest/lsp_types/) crate for LSP type definitions.
 
@@ -110,28 +109,28 @@ and access the source code using the following resources:
   - [An architectural description of all the various crates and how they relate to each other](https://github.com/ink-analyzer/ink-analyzer#readme).
   - Crate specific READMEs with installation and usage instructions, links to documentation on docs.rs and testing instructions.
   - Extensive inline source documentation.
-- Documentation for crates published on docs.rs:
-  - [Semantic Analyzer (ink-analyzer crate)](https://docs.rs/ink-analyzer/0.7.1/ink_analyzer/)
-  - [Language Server (ink-lsp-server)](https://docs.rs/ink-lsp-server/0.2.1/ink_lsp_server/)
-  - [Intermediate Representation (ink-analyzer-ir crate)](https://docs.rs/ink-analyzer-ir/0.7.1/ink_analyzer_ir/)
-  - [Procedural Macros (ink-analyzer-macro)](https://docs.rs/ink-analyzer-macro/0.6.1/ink_analyzer_macro/)
-- Rust crates published on crates.io:
-  - [Semantic Analyzer (ink-analyzer crate)](https://crates.io/crates/ink-analyzer)
-  - [Language Server (ink-lsp-server)](https://crates.io/crates/ink-lsp-server)
-  - [Intermediate Representation (ink-analyzer-ir crate)](https://crates.io/crates/ink-analyzer-ir)
-  - [Procedural Macros (ink-analyzer-macro)](https://crates.io/crates/ink-analyzer-macro).
-- [TypeScript repository for the Visual Studio Code extension](https://github.com/ink-analyzer/ink-vscode) that includes:
-  - An [README](https://github.com/ink-analyzer/ink-vscode#readme) that describes the currently implemented features and settings for the extension.
+- [Source code repository for the Visual Studio Code extension](https://github.com/ink-analyzer/ink-vscode) that includes:
+  - A [README](https://github.com/ink-analyzer/ink-vscode#readme) that describes the currently implemented features and settings for the extension.
   - A detailed [Development and Testing guide](https://github.com/ink-analyzer/ink-vscode/blob/master/DEVELOPMENT.md).
   - Extensive inline source documentation.
-- Distributable releases for major operating systems (Windows, Linux and macOS) for:
-  - [VS Code extension packages](https://github.com/ink-analyzer/ink-vscode/releases)
-  - [Language Server binaries/executables](https://github.com/ink-analyzer/ink-analyzer/releases)
-- [Published packages for the extension on the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ink-analyzer.ink-analyzer)
+- Rust crates published on crates.io:
+  - [Semantic Analyzer (ink-analyzer crate)](https://crates.io/crates/ink-analyzer)
+  - [Language Server (ink-lsp-server crate)](https://crates.io/crates/ink-lsp-server)
+  - [Intermediate Representation (ink-analyzer-ir crate)](https://crates.io/crates/ink-analyzer-ir)
+  - [Procedural Macros (ink-analyzer-macro crate)](https://crates.io/crates/ink-analyzer-macro).
+- Documentation for Rust crates published on docs.rs:
+  - [Semantic Analyzer (ink-analyzer crate)](https://docs.rs/ink-analyzer/0.7.1/ink_analyzer/)
+  - [Language Server (ink-lsp-server crate)](https://docs.rs/ink-lsp-server/0.2.1/ink_lsp_server/)
+  - [Intermediate Representation (ink-analyzer-ir crate)](https://docs.rs/ink-analyzer-ir/0.7.1/ink_analyzer_ir/)
+  - [Procedural Macros (ink-analyzer-macro crate)](https://docs.rs/ink-analyzer-macro/0.6.1/ink_analyzer_macro/)
+- Distributable releases for major operating systems (Windows, Linux and macOS) and processor architectures (x86_64/amd64 and arm64/aarch64) for:
+  - [Language Server binaries/executables](https://github.com/ink-analyzer/ink-analyzer/releases).
+  - [VS Code extension packages](https://github.com/ink-analyzer/ink-vscode/releases).
+- [Published packages for the extension on the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ink-analyzer.ink-analyzer).
 
 
 ## Conclusion
 
-ink! Analyzer is only at the very beginning of its development, so issues, bug reports, PRs and feature requests are welcome at the aforementioned GitHub repositories 🙂.
+ink! analyzer is only at the very beginning of its development, so issues, bug reports, PRs and feature requests are welcome at the aforementioned GitHub repositories 🙂.
 
-Special thanks to the [Web3 Foundation](https://web3.foundation/) for funding ink! Analyzer's development via a generous grant.
+Special thanks to the [Web3 Foundation](https://web3.foundation/) for funding ink! analyzer's development via a generous grant.
