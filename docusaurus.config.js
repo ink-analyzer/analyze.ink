@@ -37,6 +37,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        docs: false,
         blog: {
           showReadingTime: true,
           editUrl: 'https://github.com/ink-analyzer/analyze.ink/tree/master/',
