@@ -3,9 +3,12 @@ slug: introducing-ink-analyzer
 title: Introducing ink! Analyzer
 authors: [david]
 tags: [ink!, semantic analyzer, language server, LSP, VS Code]
+image: /img/header.svg
 ---
 
 # Introducing ink! Analyzer
+
+![ink! Analyzer cover image](/img/header.svg "ink! Analyzer cover image")
 
 ink! analyzer is a collection of modular and reusable libraries and tools for semantic analysis of [ink!](https://use.ink/) smart contract code.
 
