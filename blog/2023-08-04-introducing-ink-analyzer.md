@@ -10,11 +10,12 @@ image: /img/header.svg
 
 ![ink! Analyzer cover image](/img/header.svg "ink! Analyzer cover image")
 
-ink! analyzer is a collection of modular and reusable libraries and tools for semantic analysis of [ink!](https://use.ink/) smart contract code.
+I am proud to announce the successful completion of the [Web3 Foundation](https://web3.foundation/) grant for developing [ink! analyzer](https://github.com/ink-analyzer) - a collection of modular and reusable libraries and tools for semantic analysis of [ink!](https://use.ink/) smart contract code.
 
 ink! analyzer aims to improve [ink!](https://use.ink/) language support in [integrated development environments (IDEs)](https://en.wikipedia.org/wiki/Integrated_development_environment), [source code editors](https://en.wikipedia.org/wiki/Source-code_editor) and other development tools by providing modular and reusable building blocks for implementing language features (e.g. diagnostic errors, quick fixes, code completion suggestions, code/intent actions and hover content e.t.c) for the [ink! programming language](https://use.ink/) which is used for writing smart contracts for blockchains built on [Substrate](https://substrate.io/).
 
 ## Problem
+
 ink! is an [Embedded Domain Specific Language (eDSL)](https://wiki.haskell.org/Embedded_domain_specific_language) that you can use to write [WebAssembly](https://webassembly.org) based smart contracts in the [Rust](https://www.rust-lang.org/) programming language.
 In fact, ["ink! is just standard Rust in a well-defined "contract format" with specialized `#[ink(…)]` attribute macros"](https://use.ink/getting-started/creating-an-ink-project).
 
@@ -29,19 +30,19 @@ However, relying on only generic Rust language support in IDEs, code editors and
 ## Solution
 
 To solve the above challenges and improve ink! language support in IDEs, code editors and other development tools, ink! analyzer creates two main components:
-- [A modular domain-specific semantic analysis library for ink!](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/analyzer).
+- [A modular domain-specific semantic analysis library for ink!](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/analyzer) built on a resilient and lossless parser.
 - A [Language Server Protocol (LSP)](https://microsoft.github.io/language-server-protocol/) [implementation](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/lsp-server) built on top of the aforementioned semantic analysis library.
 
 These two components can be reused to add ink! language support to multiple IDEs, code editors and other development tools.
 
 In particular, a large number of IDEs and code editors support LSP servers either via configurable LSP clients or robust LSP client libraries/APIs/modules, including [Visual Studio Code, Visual Studio, Vim / Neovim, Emacs, Atom, Sublime Text, Acme, Lapce, Eclipse and many more](https://microsoft.github.io/language-server-protocol/implementors/tools/).
 
-This project makes it relatively easy for:
+ink! analyzer makes it relatively easy for:
 - Users to enable ink! language support for their IDE, code editor or other development tool if it has either a native/built-in or third-party LSP client that can be configured to launch an LSP server using an executable command (i.e. the path to an [installed ink! Language Server binary](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/lsp-server#installation)) and can use stdio (standard in/standard out) as the message transport.
 - Developers to either build extensions/plugins/integrations that add ink! language support to any tool with robust LSP client libraries/APIs/modules, or add first-class ink! language support to an existing LSP client (e.g. an open-source extension/plugin/integration).
 
-In addition to [distributing compiled ink! Language Server (`ink-lsp-server`) binaries for a few platforms](https://github.com/ink-analyzer/ink-analyzer/releases),
-ink! Analyzer additionally distributes a [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ink-analyzer.ink-analyzer) that ships with a bundled ink! Language Server as a showcase and [reference implementation](https://github.com/ink-analyzer/ink-vscode) for the latter use case.
+In addition to [distributing compiled ink! Language Server (`ink-lsp-server`) binaries for most of the major platforms/architectures](https://github.com/ink-analyzer/ink-analyzer/releases),
+ink! analyzer additionally distributes a [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ink-analyzer.ink-analyzer) that ships with a bundled ink! Language Server as a showcase and [reference implementation](https://github.com/ink-analyzer/ink-vscode) for the latter use case.
 
 The latter option typically provides a better user experience as the user doesn't have to manually install (and update) the ink! Language Server as it can be bundled by the extension/plugin/integration.
 
@@ -103,7 +104,7 @@ The VS Code extension is written in [TypeScript](https://www.typescriptlang.org/
 
 ## Diving Deeper
 
-You can learn more about the above components as well as other lower-level crates/modules used by ink! Analyzer, including:
+You can learn more about the above components as well as other lower-level crates/modules used by ink! analyzer, including:
 installation, development, usage and testing instructions, library documentation, low-level technical and architectural descriptions,
 and access the source code using the following resources:
 
@@ -122,10 +123,10 @@ and access the source code using the following resources:
   - [Intermediate Representation (ink-analyzer-ir crate)](https://crates.io/crates/ink-analyzer-ir)
   - [Procedural Macros (ink-analyzer-macro crate)](https://crates.io/crates/ink-analyzer-macro).
 - Documentation for Rust crates published on docs.rs:
-  - [Semantic Analyzer (ink-analyzer crate)](https://docs.rs/ink-analyzer/0.7.1/ink_analyzer/)
-  - [Language Server (ink-lsp-server crate)](https://docs.rs/ink-lsp-server/0.2.1/ink_lsp_server/)
-  - [Intermediate Representation (ink-analyzer-ir crate)](https://docs.rs/ink-analyzer-ir/0.7.1/ink_analyzer_ir/)
-  - [Procedural Macros (ink-analyzer-macro crate)](https://docs.rs/ink-analyzer-macro/0.6.1/ink_analyzer_macro/)
+  - [Semantic Analyzer (ink-analyzer crate)](https://docs.rs/ink-analyzer/latest/ink_analyzer/)
+  - [Language Server (ink-lsp-server crate)](https://docs.rs/ink-lsp-server/latest/ink_lsp_server/)
+  - [Intermediate Representation (ink-analyzer-ir crate)](https://docs.rs/ink-analyzer-ir/latest/ink_analyzer_ir/)
+  - [Procedural Macros (ink-analyzer-macro crate)](https://docs.rs/ink-analyzer-macro/latest/ink_analyzer_macro/)
 - Distributable releases for major operating systems (Windows, Linux and macOS) and processor architectures (x86_64/amd64 and arm64/aarch64) for:
   - [Language Server binaries/executables](https://github.com/ink-analyzer/ink-analyzer/releases).
   - [VS Code extension packages](https://github.com/ink-analyzer/ink-vscode/releases).
