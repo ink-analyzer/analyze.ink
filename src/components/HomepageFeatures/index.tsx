@@ -42,7 +42,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/extension.svg').default,
     description: (
       <>
-        Add ink! language support to a specific IDE, code editor or development tool by communicating with the Language
+        Adds ink! language support to a specific IDE, code editor or development tool by communicating with the Language
         Server running as a separate process using the{' '}
         <a href="https://microsoft.github.io/language-server-protocol/" target="_blank">
           Language Server Protocol
