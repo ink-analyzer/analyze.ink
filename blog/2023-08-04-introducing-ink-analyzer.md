@@ -14,6 +14,10 @@ I am proud to announce the successful completion of the [Web3 Foundation](https:
 
 ink! analyzer aims to improve [ink!](https://use.ink/) language support in [integrated development environments (IDEs)](https://en.wikipedia.org/wiki/Integrated_development_environment), [source code editors](https://en.wikipedia.org/wiki/Source-code_editor) and other development tools by providing modular and reusable building blocks for implementing language features (e.g. diagnostic errors, quick fixes, code completion suggestions, code/intent actions and hover content e.t.c) for the [ink! programming language](https://use.ink/) which is used for writing smart contracts for blockchains built on [Substrate](https://substrate.io/).
 
+- Semantic Analyzer ([source code](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/analyzer), [crates.io](https://crates.io/crates/ink-analyzer), [docs.rs](https://docs.rs/ink-analyzer/latest/ink_analyzer/)).
+- Language Server ([source code](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/lsp-server), [binary/executable releases](https://github.com/ink-analyzer/ink-analyzer/releases), [crates.io](https://crates.io/crates/ink-lsp-server), [docs.rs](https://docs.rs/ink-lsp-server/latest/ink_lsp_server/)).
+- Visual Studio Code Extension ([source code](https://github.com/ink-analyzer/ink-vscode), [VS Code Marketplace listing](https://marketplace.visualstudio.com/items?itemName=ink-analyzer.ink-analyzer), [VSIX releases](https://github.com/ink-analyzer/ink-vscode/releases)).
+
 ## Problem
 
 ink! is an [Embedded Domain Specific Language (eDSL)](https://wiki.haskell.org/Embedded_domain_specific_language) that you can use to write [WebAssembly](https://webassembly.org) based smart contracts in the [Rust](https://www.rust-lang.org/) programming language.
