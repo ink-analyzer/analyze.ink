@@ -12,7 +12,7 @@ image: /img/header.svg
 
 I am proud to announce the successful completion of the [Web3 Foundation](https://web3.foundation/) grant for developing [ink! analyzer](https://github.com/ink-analyzer) - a collection of modular and reusable libraries and tools for semantic analysis of [ink!](https://use.ink/) smart contract code.
 
-ink! analyzer aims to improve [ink!](https://use.ink/) language support in [integrated development environments (IDEs)](https://en.wikipedia.org/wiki/Integrated_development_environment), [source code editors](https://en.wikipedia.org/wiki/Source-code_editor) and other development tools by providing modular and reusable building blocks for implementing language features (e.g. diagnostic errors, quick fixes, code completion suggestions, code/intent actions and hover content e.t.c) for the [ink! programming language](https://use.ink/) which is used for writing smart contracts for blockchains built on [Substrate](https://substrate.io/).
+ink! analyzer aims to improve [ink!](https://use.ink/) language support in [integrated development environments (IDEs)](https://en.wikipedia.org/wiki/Integrated_development_environment), [source code editors](https://en.wikipedia.org/wiki/Source-code_editor) and other development tools by providing modular and reusable building blocks for implementing language features (e.g. diagnostic errors, quick fixes, code completion suggestions, code/intent actions and hover content e.t.c) for the [ink! programming language](https://use.ink/) which is used for writing smart contracts for blockchains built with [Substrate](https://substrate.io/).
 
 - Semantic Analyzer ([source code](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/analyzer), [crates.io](https://crates.io/crates/ink-analyzer), [docs.rs](https://docs.rs/ink-analyzer/latest/ink_analyzer/)).
 - Language Server ([source code](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/lsp-server), [binary/executable releases](https://github.com/ink-analyzer/ink-analyzer/releases), [crates.io](https://crates.io/crates/ink-lsp-server), [docs.rs](https://docs.rs/ink-lsp-server/latest/ink_lsp_server/)).
@@ -23,12 +23,12 @@ ink! analyzer aims to improve [ink!](https://use.ink/) language support in [inte
 ink! is an [Embedded Domain Specific Language (eDSL)](https://wiki.haskell.org/Embedded_domain_specific_language) that you can use to write [WebAssembly](https://webassembly.org) based smart contracts in the [Rust](https://www.rust-lang.org/) programming language.
 In fact, ["ink! is just standard Rust in a well-defined "contract format" with specialized `#[ink(…)]` attribute macros"](https://use.ink/getting-started/creating-an-ink-project).
 
-This allows ink! developers to leverage Rust tooling like [clippy](https://doc.rust-lang.org/clippy/), [cargo](https://doc.rust-lang.org/cargo/), [crates.io](https://crates.io/) and excellent IDE/code editor support via [rust-analyzer](https://rust-analyzer.github.io/) and [IntelliJ Rust](https://www.jetbrains.com/rust/).
+This allows ink! developers to leverage Rust tooling like [clippy](https://doc.rust-lang.org/clippy/), [cargo](https://doc.rust-lang.org/cargo/), [crates.io](https://crates.io/) and excellent IDE/code editor support via [rust-analyzer](https://rust-analyzer.github.io/) and [IntelliJ Rust](https://intellij-rust.github.io/).
 
 However, relying on only generic Rust language support in IDEs, code editors and other development tools has some significant limitations for the developer experience including:
 
 - No language support (e.g. diagnostic errors/warnings and quick fixes) for ink!'s domain specific semantic rules for smart contracts (e.g. exactly one `#[ink(storage)]` struct, at least one `#[ink(message)]` method and the same for `#[ink(constructor)]`, ink! attributes should be applied to items of the correct type e.t.c).
-- Inconsistent editor experience with issues like no code completion and/or hover content for some ink! attribute arguments (e.g `#[ink(payable)]`) because [macro expansion/name resolution and trait resolution are hard problems for generic IDE/code editor tools](https://rust-lang.github.io/compiler-team/working-groups/rls-2.0/#scope-and-purpose) (see also [https://rust-analyzer.github.io/blog/2021/11/21/ides-and-macros.html](https://rust-analyzer.github.io/blog/2021/11/21/ides-and-macros.html)).
+- Inconsistent editor experience with issues like no code completion and/or hover content for some ink! attribute arguments (e.g. `#[ink(payable)]`) because [macro expansion/name resolution and trait resolution are hard problems for generic IDE/code editor tools](https://rust-lang.github.io/compiler-team/working-groups/rls-2.0/#scope-and-purpose) (see also [https://rust-analyzer.github.io/blog/2021/11/21/ides-and-macros.html](https://rust-analyzer.github.io/blog/2021/11/21/ides-and-macros.html)).
 - No language support (e.g. go to definition, find references and rename/refactor) for [ink! specific syntax like paths in ink! attribute argument values (e.g. `env` and `environment` values)](https://github.com/paritytech/ink/blob/v4.2.1/crates/ink/ir/src/ast/mod.rs#L19-L25).
 
 ## Solution
@@ -45,10 +45,10 @@ ink! analyzer makes it relatively easy for:
 - Users to enable ink! language support for their IDE, code editor or other development tool if it has either a native/built-in or third-party LSP client that can be configured to launch an LSP server using an executable command (i.e. the path to an [installed ink! Language Server binary](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/lsp-server#installation)) and can use stdio (standard in/standard out) as the message transport.
 - Developers to either build extensions/plugins/integrations that add ink! language support to any tool with robust LSP client libraries/APIs/modules, or add first-class ink! language support to an existing LSP client (e.g. an open-source extension/plugin/integration).
 
-In addition to [distributing compiled ink! Language Server (`ink-lsp-server`) binaries for most of the major platforms/architectures](https://github.com/ink-analyzer/ink-analyzer/releases),
-ink! analyzer additionally distributes a [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ink-analyzer.ink-analyzer) that ships with a bundled ink! Language Server as a showcase and [reference implementation](https://github.com/ink-analyzer/ink-vscode) for the latter use case.
+The latter option typically provides a better user experience as the user doesn't have to manually install (and update) the ink! Language Server as it can be bundled (or installed/updated) by the extension/plugin/integration.
 
-The latter option typically provides a better user experience as the user doesn't have to manually install (and update) the ink! Language Server as it can be bundled by the extension/plugin/integration.
+Therefore, in addition to [distributing compiled ink! Language Server (`ink-lsp-server`) binaries for most of the major platforms/architectures](https://github.com/ink-analyzer/ink-analyzer/releases),
+ink! analyzer additionally distributes a [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ink-analyzer.ink-analyzer) that ships with a bundled ink! Language Server as a showcase and [reference implementation](https://github.com/ink-analyzer/ink-vscode) for the latter use case.
 
 
 ## Architecture
