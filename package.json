@@ -14,8 +14,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "format": "prettier --write ./**/*.{js,jsx,mjs,ts,tsx}",
-    "format:diff": "prettier --list-different ./**/*.{js,jsx,mjs,ts,tsx}"
+    "format": "prettier --write ./**/*.{js,jsx,mjs,ts,tsx,md,mdx}",
+    "format:diff": "prettier --list-different ./**/*.{js,jsx,mjs,ts,tsx,md,mdx}"
   },
   "dependencies": {
     "@docusaurus/core": "2.4.1",

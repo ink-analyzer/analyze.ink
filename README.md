@@ -14,7 +14,8 @@ $ yarn
 $ yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This command starts a local development server and opens up a browser window.
+Most changes are reflected live without having to restart the server.
 
 ### Build
 
@@ -34,9 +35,8 @@ The source code is licensed under [GPL-3.0](/LICENSE).
 
 ## Contribution
 
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in the work by you, as defined in the GPL-3.0 license, shall be
-licensed as above, without any additional terms or conditions.
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you,
+as defined in the GPL-3.0 license, shall be licensed as above, without any additional terms or conditions.
 
 ## Acknowledgements
 
