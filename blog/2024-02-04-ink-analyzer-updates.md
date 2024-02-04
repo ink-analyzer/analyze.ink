@@ -51,9 +51,9 @@ This stage of the project has improved ink! language support features across all
 
 ## Conclusion
 
-You can learn more about all ink! analyzer in the [introductory blog post](/blog/introducing-ink-analyzer)
+You can learn more about all ink! analyzer components in the [introductory blog post](/blog/introducing-ink-analyzer)
 (including links to all available project resources in the ["Diving Deeper"](/blog/introducing-ink-analyzer#diving-deeper)
-section) and/or checkout the [ink! analyzer organization on GitHub](https://github.com/ink-analyzer) for:
+section), and/or checkout the [ink! analyzer organization on GitHub](https://github.com/ink-analyzer) for:
 installation, development, usage and testing instructions, library documentation, low-level technical and
 architectural descriptions, access to the source code, and distributable releases of the ink! Language Server and
 [VSIX packages](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions)
