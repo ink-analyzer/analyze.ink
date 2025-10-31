@@ -93,7 +93,43 @@ that ships with a bundled ink! Language Server as a showcase and
 
 ## Architecture
 
-![ink! Analyzer - LSP based Architecture Diagram](/img/architecture.png 'ink! Analyzer - LSP based Architecture Diagram')
+```mermaid
+block-beta
+  columns 1
+  block:IDE
+    columns 1
+    Label["IDE/Code Editor/Development Tool"]
+    Core("Core")
+    space
+    Extension("Extension/Plugin")
+  end
+  %% Grouped for styling/spacing
+  block:Custom
+    columns 1
+    space
+    LSP("Language Server")
+    space
+    Analyzer("Semantic Analyzer")
+  end
+
+  %% bidirectional communication between IDE and Extension
+  Core--"Extension/Plugin API"-->Extension
+  Extension-->Core
+  %% bidirectional communication between Extension and Language Server
+  Extension--"LSP (Language Server Protocol)"-->LSP
+  LSP-->Extension
+  %% Language Server talks to Semantic Analyzer
+  LSP--"Analyzer API"-->Analyzer
+
+  classDef blue fill:#3d86c6,stroke:#3d86c6
+  classDef green fill:#6aa84f,stroke:#6aa84f
+  classDef transparent fill:transparent,stroke:transparent
+  class IDE blue
+  class Custom,Label transparent
+  style Core color:#ccc,fill:#073763,stroke:#073763
+  class Extension,LSP,Analyzer green
+```
+
 _Figure 1: ink! Analyzer - LSP based Architecture Diagram_
 
 ### 1. [Semantic Analyzer](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/analyzer)
