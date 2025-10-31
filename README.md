@@ -1,6 +1,6 @@
-# ink! Analyzer
+# ink! analyzer
 
-This repository contains the source code for the [ink! Analyzer](https://analyze.ink/) website.
+This repository contains the source code for the [ink! analyzer](https://analyze.ink/) website.
 
 ### Installation
 

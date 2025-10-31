@@ -1,6 +1,6 @@
 ---
 slug: ink-analyzer-updates
-title: ink! Analyzer Updates
+title: ink! analyzer Updates
 authors: [david]
 tags: [ink!, semantic analyzer, language server, LSP, VS Code]
 image: /img/header.svg

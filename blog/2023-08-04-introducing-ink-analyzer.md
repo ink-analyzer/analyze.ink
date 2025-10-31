@@ -1,12 +1,12 @@
 ---
 slug: introducing-ink-analyzer
-title: Introducing ink! Analyzer
+title: Introducing ink! analyzer
 authors: [david]
 tags: [ink!, semantic analyzer, language server, LSP, VS Code]
 image: /img/header.svg
 ---
 
-![ink! Analyzer cover image](/img/header.svg 'ink! Analyzer cover image')
+![ink! analyzer cover image](/img/header.svg 'ink! analyzer cover image')
 
 I am proud to announce the successful completion of the [Web3 Foundation](https://web3.foundation/) grant for
 developing [ink! analyzer](https://github.com/ink-analyzer) - a collection of modular and reusable libraries and tools
@@ -130,7 +130,7 @@ block-beta
   class Extension,LSP,Analyzer green
 ```
 
-_Figure 1: ink! Analyzer - LSP based Architecture Diagram_
+_Figure 1: ink! analyzer - LSP based Architecture Diagram_
 
 ### 1. [Semantic Analyzer](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/analyzer)
 

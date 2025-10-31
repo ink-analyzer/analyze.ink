@@ -5,7 +5,7 @@ const prismThemes = require('prism-react-renderer').themes;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ink! Analyzer',
+  title: 'ink! analyzer',
   tagline:
     'A collection of modular and reusable libraries and tools for semantic analysis of ink! smart contract code.',
   favicon: 'img/logo.svg',
@@ -60,9 +60,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo.svg',
       navbar: {
-        title: 'ink! Analyzer',
+        title: 'ink! analyzer',
         logo: {
-          alt: 'ink! Analyzer',
+          alt: 'ink! analyzer',
           src: 'img/logo.svg',
         },
         items: [
