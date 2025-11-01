@@ -7,7 +7,7 @@ const prismThemes = require('prism-react-renderer').themes;
 const config = {
   title: 'ink! analyzer',
   tagline:
-    'A collection of modular and reusable libraries and tools for semantic analysis of ink! smart contract code.',
+    'A collection of modular and reusable libraries and tools for semantic analysis of ink! smart contracts.',
   favicon: 'img/logo.svg',
 
   // Production URL.

@@ -16,6 +16,12 @@
   }
 }
 
+.logoSvg {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: -5px;
+}
+
 .buttons {
   display: flex;
   align-items: center;

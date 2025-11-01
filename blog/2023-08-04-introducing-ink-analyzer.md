@@ -10,15 +10,15 @@ image: /img/header.svg
 
 I am proud to announce the successful completion of the [Web3 Foundation](https://web3.foundation/) grant for
 developing [ink! analyzer](https://github.com/ink-analyzer) - a collection of modular and reusable libraries and tools
-for semantic analysis of [ink!](https://use.ink/) smart contract code.
+for semantic analysis of [ink!](https://use.ink/) smart contracts.
 
 ink! analyzer aims to improve [ink!](https://use.ink/) language support in
 [integrated development environments (IDEs)](https://en.wikipedia.org/wiki/Integrated_development_environment),
 [source code editors](https://en.wikipedia.org/wiki/Source-code_editor) and other development tools by
 providing modular and reusable building blocks for implementing language features
-(e.g. diagnostic errors, quick fixes, code completion suggestions, code/intent actions and hover content e.t.c)
-for the [ink! programming language](https://use.ink/) which is used for writing smart contracts for blockchains
-built with [Substrate](https://substrate.io/).
+(e.g. diagnostic errors, quick fixes, code completion suggestions, code/intent actions, inlay hints,
+signature help and hover content e.t.c) for the [ink! programming language](https://use.ink/) -
+which is used for writing smart contracts for blockchains built with [Substrate](https://substrate.io/).
 
 - Semantic Analyzer ([source code](https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/analyzer),
   [crates.io](https://crates.io/crates/ink-analyzer), [docs.rs](https://docs.rs/ink-analyzer/latest/ink_analyzer/)).

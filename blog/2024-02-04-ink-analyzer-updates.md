@@ -8,7 +8,7 @@ image: /img/header.svg
 
 I am proud to announce the successful completion of another [Web3 Foundation](https://web3.foundation/) grant for
 updating [ink! analyzer](https://github.com/ink-analyzer) - a collection of modular and reusable libraries and tools
-for semantic analysis of [ink!](https://use.ink/) smart contract code.
+for semantic analysis of [ink!](https://use.ink/) smart contracts.
 
 If you're new to ink! analyzer (or if you need a refresher 🙂), you can refer to the
 [introductory blog post](/blog/introducing-ink-analyzer) for a deep dive into the
