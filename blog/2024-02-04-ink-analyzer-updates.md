@@ -1,10 +1,12 @@
 ---
 slug: ink-analyzer-updates
-title: ink! analyzer Updates
+title: ink! analyzer updates
 authors: [david]
 tags: [ink!, semantic analyzer, language server, LSP, VS Code]
 image: /img/header.svg
 ---
+
+![ink! analyzer cover image](/img/header.svg 'ink! analyzer cover image')
 
 I am proud to announce the successful completion of another [Web3 Foundation](https://web3.foundation/) grant for
 updating [ink! analyzer](https://github.com/ink-analyzer) - a collection of modular and reusable libraries and tools
