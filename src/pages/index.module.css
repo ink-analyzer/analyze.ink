@@ -10,21 +10,38 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 .logoSvg {
   height: 3rem;
   width: 3rem;
   margin-bottom: -5px;
 }
 
+.heroBanner .buttons {
+  padding: 0;
+}
+
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.buttons > * {
+  margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+
+  .logoSvg {
+    display: none;
+  }
+
+  .buttons > * {
+    margin: 0.5rem;
+  }
 }

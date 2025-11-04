@@ -19,8 +19,17 @@ function HomepageHeader() {
         </h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/blog/introducing-ink-analyzer">
-            Read the introductory blog post - 7min ⏱️
+          <Link
+            className="button button--secondary button--lg"
+            href="https://marketplace.visualstudio.com/items?itemName=ink-analyzer.ink-analyzer"
+          >
+            VS Code Extension
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            href="https://github.com/ink-analyzer/ink-analyzer/releases"
+          >
+            LSP Server binaries
           </Link>
         </div>
       </div>
@@ -37,11 +46,8 @@ export default function Home(): JSX.Element {
         <HomepageFeatures />
 
         <div className={styles.buttons}>
-          <Link
-            className="button button--primary button--lg"
-            href="https://marketplace.visualstudio.com/items?itemName=ink-analyzer.ink-analyzer"
-          >
-            Install Visual Studio Code Extension
+          <Link className="button button--primary button--lg" to="/blog/introducing-ink-analyzer">
+            Read the introductory blog post - 7min ⏱️
           </Link>
         </div>
       </main>
