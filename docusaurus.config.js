@@ -127,7 +127,10 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://davidsemakula.com" target="_blank" class="footer__link-item">David Semakula</a>.`,
+        copyright: `
+<div>Copyright © ${new Date().getFullYear()} <a href="https://davidsemakula.com" target="_blank">David Semakula</a></div>
+<div>Illustration by <a href="https://illustratordima.com" target="_blank">Dima Moiseenko</a></div>
+`,
       },
       prism: {
         theme: prismThemes.github,
