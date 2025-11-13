@@ -67,12 +67,6 @@ const config = {
         },
         items: [
           { to: '/blog', label: 'Blog', position: 'left' },
-
-          {
-            href: 'https://github.com/ink-analyzer/',
-            label: 'Roadmap',
-            position: 'right',
-          },
           {
             href: 'https://github.com/ink-analyzer/',
             label: 'GitHub',
@@ -87,15 +81,15 @@ const config = {
             title: 'Resources',
             items: [
               {
-                label: 'Semantic Analyzer',
+                label: 'semantic analyzer',
                 href: 'https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/analyzer',
               },
               {
-                label: 'Language Server',
+                label: 'language server',
                 href: 'https://github.com/ink-analyzer/ink-analyzer/tree/master/crates/lsp-server',
               },
               {
-                label: 'Visual Studio Code Extension',
+                label: 'VS Code extension',
                 href: 'https://github.com/ink-analyzer/ink-vscode',
               },
             ],
@@ -108,21 +102,8 @@ const config = {
                 href: 'https://github.com/ink-analyzer/',
               },
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/ink-analyzer',
-              },
-              {
-                label: 'Twitter',
+                label: 'X/Twitter',
                 href: 'https://twitter.com/davidsemakula',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Roadmap',
-                href: 'https://github.com/ink-analyzer/',
               },
             ],
           },
