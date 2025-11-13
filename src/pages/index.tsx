@@ -29,7 +29,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             href="https://github.com/ink-analyzer/ink-analyzer/releases"
           >
-            LSP Server binaries
+            Language Server binaries
           </Link>
         </div>
       </div>
